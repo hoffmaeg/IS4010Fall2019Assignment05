@@ -26,6 +26,17 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
-		return "";
-	}
+		String translateScore = "";
+		
+		if (score == -1) {translateScore = "";}
+		if (score == 1) {translateScore = "invalid";}
+		if (score == 2) {translateScore = "safety";}
+		if (score == 3) {translateScore = "field goal";}
+		if (score == 6) {translateScore = "touchdown";}
+		if (score == 7) {translateScore = "touchdown and extra point";}		
+		if (score == 8) {translateScore = "touchdown and 2-point conversion";}
+		if (score == 10) {translateScore = "you must be playing Quidditch ";}
+		return translateScore;
+		
+	}	
 }
